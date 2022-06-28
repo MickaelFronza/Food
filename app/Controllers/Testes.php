@@ -10,4 +10,9 @@ class Testes extends BaseController
     {
         return view('Testes/index.php');
     }
+    public function novo() {
+        echo 'Esse é mais um método do controller Testes';
+    }
 }
+
+
