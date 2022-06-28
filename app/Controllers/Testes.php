@@ -8,7 +8,13 @@ class Testes extends BaseController
 {
     public function index()
     {
-        return view('Testes/index.php');
+
+        $data = [ 
+            'titulo' => 'Sistema de entrega',
+            'subtitulo'  => 'Muito Legal',
+
+        ];
+        return view('Testes/index.php', $data);
     }
     public function novo() {
         echo 'Esse é mais um método do controller Testes';
