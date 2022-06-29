@@ -50,11 +50,14 @@ class CriaTabelaUsuarios extends Migration
             'ativacao_hash' =>[
                 'type' => 'VARCHAR',
                 'constraint' => '64',
+                'null' => true,
                 'unique' => true,
+                
             ],
             'reset_hash' =>[
                 'type' => 'VARCHAR',
                 'constraint' => '64',
+                'null' => true,
                 'unique' => true,
             ],
             'reset_expira_em' =>[

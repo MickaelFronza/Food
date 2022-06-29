@@ -13,16 +13,19 @@ class UsuarioSeeder extends Seeder
         $usuario = [
             'nome' => 'Mickael Fronza',
             'email' => 'admin@admin.com',
-            'telefone' => '41 99514-0996'
+            'telefone' => '41 99999-9999',
+            'cpf' => '446.291.880-02',
+            
         ];
 
         $usuario_model->protect(false)->insert($usuario);
 
 
         $usuario = [
-            'nome' => 'Larissa Fronza',
-            'email' => 'larissa@admin.com',
-            'telefone' => '41 99213-7945'
+            'nome' => 'Fulano de Tal',
+            'email' => 'fulano@email.com',
+            'telefone' => '41 88888-9999',
+            'cpf' => '419.255.360-09',
         ];
 
         $usuario_model->protect(false)->insert($usuario);
